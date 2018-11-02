@@ -7,6 +7,7 @@ footer = () => {
                     <i class="icon-social-linkedin"></i>
                 </a>
             </li>
+            
             <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white" target="_blank" href="https://github.com/Figamus">
                     <i class="icon-social-github"></i>
