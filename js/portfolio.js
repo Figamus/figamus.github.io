@@ -20,6 +20,7 @@ portfolio = () => {
         </div>
     </div>`
 }
+
 {/* <div class="col-lg-6 mx-auto">
                 <a class="portfolio-item" href="#">
                     <span class="caption">
