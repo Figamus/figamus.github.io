@@ -7,7 +7,7 @@ portfolio = () => {
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 mx-auto">
-                <a class="portfolio-item" href="https://github.com/Figamus/sale-sleuth">
+                <a class="portfolio-item" target="_blank" href="https://github.com/Figamus/sale-sleuth">
                     <span class="caption">
                         <span class="caption-content">
                             <h2>Sale Sleuth</h2>

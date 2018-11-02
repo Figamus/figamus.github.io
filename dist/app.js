@@ -20,12 +20,12 @@ footer = () => {
     <div class="container">
         <ul class="list-inline mb-5">
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/daniel-figueroa/">
+                <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://www.linkedin.com/in/daniel-figueroa/">
                     <i class="icon-social-linkedin"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://github.com/Figamus">
+                <a class="social-link rounded-circle text-white" target="_blank" href="https://github.com/Figamus">
                     <i class="icon-social-github"></i>
                 </a>
             </li>
@@ -46,12 +46,12 @@ header = () => {
         <div class="container">
         <ul class="list-inline mb-5">
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/daniel-figueroa/">
+                <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://www.linkedin.com/in/daniel-figueroa/">
                     <i class="icon-social-linkedin"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="https://github.com/Figamus">
+                <a class="social-link rounded-circle text-white" target="_blank" href="https://github.com/Figamus">
                     <i class="icon-social-github"></i>
                 </a>
             </li>
@@ -123,7 +123,7 @@ portfolio = () => {
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 mx-auto">
-                <a class="portfolio-item" href="https://github.com/Figamus/sale-sleuth">
+                <a class="portfolio-item" target="_blank" href="https://github.com/Figamus/sale-sleuth">
                     <span class="caption">
                         <span class="caption-content">
                             <h2>Sale Sleuth</h2>
