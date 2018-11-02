@@ -2,12 +2,12 @@
 about = () => {
     document.querySelector("#about").innerHTML = `
     <div class="container text-center">
-    <img class="rounded-circle" src="./img/temp-image.jpg" alt="Profile Image" width="300" height="300"></img>
+    <img class="rounded-circle profile-image" src="./img/temp-image.jpg" alt="Profile Image" width="300" height="300"></img>
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h2>About Me</h2>
                 <p class="lead mb-5">Since 2005 I've been involved in the graphic design field. I've utilized the skills acquired during my education to produce a variety of products for both print and web. In 2010, I transitioned into an opportunity to be involved in the emerging 3D imaging and 3D printing industry, allowing me to learn new skills and having more input on company wide decisions. I continue to maintain a practice at Graphic Design, but decided to transition into a development environment, having discovered a passion for it. I pursued an education in an environment that fostered my passion.</p>
-                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Skills</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Skills</a>
             </div>
         </div>
     </div>`
@@ -18,6 +18,18 @@ module.exports = about
 footer = () => {
     document.querySelector("#footer").innerHTML = `
     <div class="container">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/daniel-figueroa/">
+                    <i class="icon-social-linkedin"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://github.com/Figamus">
+                    <i class="icon-social-github"></i>
+                </a>
+            </li>
+        </ul>
         <p class="text-muted small mb-0">Copyright &copy; Daniel Figueroa 2018</p>
     </div>`
 }
@@ -31,19 +43,7 @@ header = () => {
         <h3 class="mb-5 text-light deepshd">
             <em>Software Developer</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#links">Find Out More</a>
-    </div>
-    <div class="overlay"></div>`
-}
-
-module.exports = header
-},{}],4:[function(require,module,exports){
-links = () => {
-    document.querySelector("#links").innerHTML = `
-    <div class="container">
-        <div class="content-section-heading">
-            <h3 class="text-secondary mb-0">Links</h3>
-        </div>
+        <div class="container">
         <ul class="list-inline mb-5">
             <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/daniel-figueroa/">
@@ -56,16 +56,19 @@ links = () => {
                 </a>
             </li>
         </ul>
-    </div>`
+        </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#links">Find Out More</a>
+    </div>
+    <div class="overlay"></div>`
 }
 
-module.exports = links
-},{}],5:[function(require,module,exports){
+module.exports = header
+},{}],4:[function(require,module,exports){
 "use strict";
 
 let navbar = require("./navbar");
 let header = require("./header");
-let links = require("./links");
+// let links = require("./links");
 let about = require("./about");
 let skills = require("./skills");
 // let resume = require("./resume");
@@ -75,7 +78,7 @@ let footer = require("./footer");
 
 navbar();
 header();
-links();
+// links();
 about();
 skills();
 // resume();
@@ -83,23 +86,19 @@ portfolio();
 // action();
 footer();
 
-$('html, body').scrollTop($('html, body')[0].scrollHeight)
-// $('html, body').animate({
-//     scrollTop: target.offset().top
-// }, 1000, "easeInOutExpo");
+$('html, body').ready(function(){
+    $(this).scrollTop(0);
+});
 
-},{"./about":1,"./footer":2,"./header":3,"./links":4,"./navbar":6,"./portfolio":7,"./skills":8}],6:[function(require,module,exports){
+},{"./about":1,"./footer":2,"./header":3,"./navbar":5,"./portfolio":6,"./skills":7}],5:[function(require,module,exports){
 navbar = () => {
     document.querySelector("#sidebar-wrapper").innerHTML = `
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Top of Page</a>
+            <p class="text-white">Navigation</p>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#page-top">Daniel Figueroa</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#links">Links</a>
         </li>
         <li class="sidebar-nav-item">
             <a class="js-scroll-trigger" href="#about">About</a>
@@ -114,7 +113,7 @@ navbar = () => {
 }
 
 module.exports = navbar
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 portfolio = () => {
     document.querySelector("#portfolio").innerHTML = `
     <div class="container">
@@ -173,7 +172,7 @@ portfolio = () => {
                     </a>
                 </div> */}
 module.exports = portfolio
-},{}],8:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 skills = () => {
     document.querySelector("#services").innerHTML = `
     <div class="container">
@@ -183,7 +182,7 @@ skills = () => {
         <div class="row">
 
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
-                <img class="" src="./img/HTML5_logo_and_wordmark.svg" alt="Profile Image" height="125"></img>
+                <img class="" src="./img/icon-html.png" alt="Profile Image" width="125" height="125"></img>
                 <h4>
                     <strong>HTML</strong>
                 </h4>
@@ -191,7 +190,7 @@ skills = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
-                <img class="" src="./img/CSS.3.svg" alt="Profile Image" height="125"></img>
+                <img class="" src="./img/icon-css.png" alt="Profile Image" width="125" height="125"></img>
                 <h4>
                     <strong>CSS</strong>
                 </h4>
@@ -199,7 +198,7 @@ skills = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mb-5 mb-md-0 mx-auto">
-            <img class="" src="./img/JavaScript-logo.png" alt="Profile Image" height="125"></img>
+            <img class="" src="./img/icon-javascript.png" alt="Profile Image" width="125" height="125"></img>
                 <h4>
                     <strong>Javascript</strong>
                 </h4>
@@ -207,7 +206,7 @@ skills = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mx-auto">
-            <img class="" src="./img/2000px-React-icon.svg.png" alt="Profile Image" height="125"></img>
+            <img class="" src="./img/icon-react.png" alt="Profile Image" width="125" height="125"></img>
                 <h4>
                     <strong>React</strong>
                 </h4>
@@ -215,15 +214,39 @@ skills = () => {
             </div>
 
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
-            <img class="" src="./img/browserify.png" alt="Profile Image" height="125"></img>
-            <h4>
-                <strong>Browserify</strong>
-            </h4>
-            <p class="text-faded mb-0"></p>
-        </div>
+                <img class="" src="./img/icon-npm.png" alt="Profile Image" width="125" height="125"></img>
+                <h4>
+                    <strong>NPM</strong>
+                </h4>
+                <p class="text-faded mb-0"></p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+                <img class="rounded-circle" src="./img/icon-git.png" alt="Profile Image" width="125" height="125"></img>
+                <h4>
+                    <strong>Git</strong>
+                </h4>
+                <p class="text-faded mb-0"></p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+                <img class="rounded-circle" src="./img/icon-github.png" alt="Profile Image" width="125" height="125"></img>
+                <h4>
+                    <strong>Github</strong>
+                </h4>
+                <p class="text-faded mb-0"></p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+                <img class="" src="./img/icon-browserify.png" alt="Profile Image" width="125" height="125"></img>
+                <h4>
+                    <strong>Browserify</strong>
+                </h4>
+                <p class="text-faded mb-0"></p>
+            </div>
 
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
-        <img class="" src="./img/grunt.svg" alt="Profile Image" height="125"></img>
+        <img class="" src="./img/icon-grunt.png" alt="Profile Image" width="125" height="125"></img>
             <h4>
                 <strong>Grunt</strong>
             </h4>
@@ -231,7 +254,7 @@ skills = () => {
         </div>
 
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0 mx-auto">
-        <img class="" src="./img/bootstrap-stack.png" alt="Profile Image" height="125"></img>
+        <img class="" src="./img/icon-bootstrap.png" alt="Profile Image" width="125" height="125"></img>
             <h4>
                 <strong>Bootstrap</strong>
             </h4>
@@ -239,7 +262,14 @@ skills = () => {
         </div>
 
         <div class="col-lg-3 col-md-6 mx-auto">
-        <img class="" src="./img/sql-server-logo.png" alt="Profile Image" height="125"></img>
+        <img class="" src="./img/icon-visual-studio.png" alt="Profile Image" width="125" height="125"></img>
+            <h4>
+                <strong>Visual Studio</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+        <div class="col-lg-3 col-md-6 mx-auto">
+        <img class="" src="./img/icon-sql-server.png" alt="Profile Image" width="125" height="125"></img>
             <h4>
                 <strong>SQL Server</strong>
             </h4>
@@ -247,7 +277,7 @@ skills = () => {
         </div>
 
         <div class="col-lg-3 col-md-6 mx-auto">
-        <img class="" src="./img/csharp.png" alt="Profile Image" height="125"></img>
+        <img class="" src="./img/icon-csharp.png" alt="Profile Image" width="125" height="125"></img>
             <h4>
                 <strong>C#</strong>
             </h4>
@@ -255,7 +285,7 @@ skills = () => {
         </div>
 
         <div class="col-lg-3 col-md-6 mx-auto">
-        <img class="" src="./img/aspnetcore.png" alt="Profile Image" height="125"></img>
+        <img class="" src="./img/icon-aspnet-core.png" alt="Profile Image" width="125" height="125"></img>
             <h4>
                 <strong>ASP.NET Core</strong>
             </h4>
@@ -263,7 +293,7 @@ skills = () => {
         </div>
 
         </div>
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Projects</a>
+        <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio">Projects</a>
     </div>`
 }
 // HTML
@@ -280,4 +310,4 @@ skills = () => {
 // InDesign
 // 3DS Max
 module.exports = skills
-},{}]},{},[5]);
+},{}]},{},[4]);
