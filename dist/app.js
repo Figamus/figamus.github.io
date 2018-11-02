@@ -7,13 +7,12 @@ about = () => {
             <div class="col-lg-10 mx-auto">
                 <h2>About Me</h2>
                 <p class="lead mb-5">Since 2005 I've been involved in the graphic design field. I've utilized the skills acquired during my education to produce a variety of products for both print and web. In 2010, I transitioned into an opportunity to be involved in the emerging 3D imaging and 3D printing industry, allowing me to learn new skills and having more input on company wide decisions. I continue to maintain a practice at Graphic Design, but decided to transition into a development environment, having discovered a passion for it. I pursued an education in an environment that fostered my passion.</p>
-                
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Skills</a>
             </div>
         </div>
     </div>`
 }
 
-{/* <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> */}
 module.exports = about
 },{}],2:[function(require,module,exports){
 footer = () => {
@@ -124,30 +123,21 @@ portfolio = () => {
             <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
+            <div class="col-lg-6 mx-auto">
+                <a class="portfolio-item" href="https://github.com/Figamus/sale-sleuth">
                     <span class="caption">
                         <span class="caption-content">
-                            <h2>Stationary</h2>
-                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                            <h2>Sale Sleuth</h2>
+                            <p class="mb-0">A price tracking website</p>
                         </span>
                     </span>
                     <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
                 </a>
             </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-                    <span class="caption">
-                        <span class="caption-content">
-                            <h2>Ice Cream</h2>
-                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice
-                                cream cone!</p>
-                        </span>
-                    </span>
-                    <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
+        </div>
+    </div>`
+}
+{/* <div class="col-lg-6 mx-auto">
                 <a class="portfolio-item" href="#">
                     <span class="caption">
                         <span class="caption-content">
@@ -159,7 +149,7 @@ portfolio = () => {
                     <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
                 </a>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mx-auto">
                 <a class="portfolio-item" href="#">
                     <span class="caption">
                         <span class="caption-content">
@@ -170,61 +160,124 @@ portfolio = () => {
                     <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
                 </a>
             </div>
-        </div>
-    </div>`
-}
-
+            <div class="col-lg-6 mx-auto">
+                    <a class="portfolio-item" href="#">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>Ice Cream</h2>
+                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice
+                                    cream cone!</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                    </a>
+                </div> */}
 module.exports = portfolio
 },{}],8:[function(require,module,exports){
 skills = () => {
     document.querySelector("#services").innerHTML = `
     <div class="container">
         <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Technologies studied and practiced with</h3>
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Skill Set</h2>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <span class="service-icon rounded-circle mx-auto mb-3">
-                    <i class="icon-screen-smartphone"></i>
-                </span>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+                <img class="" src="./img/HTML5_logo_and_wordmark.svg" alt="Profile Image" height="125"></img>
                 <h4>
-                    <strong>Responsive</strong>
+                    <strong>HTML</strong>
                 </h4>
-                <p class="text-faded mb-0">Looks great on any screen size!</p>
+                <p class="text-faded mb-0"></p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <span class="service-icon rounded-circle mx-auto mb-3">
-                    <i class="icon-pencil"></i>
-                </span>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+                <img class="" src="./img/CSS.3.svg" alt="Profile Image" height="125"></img>
                 <h4>
-                    <strong>Redesigned</strong>
+                    <strong>CSS</strong>
                 </h4>
-                <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+                <p class="text-faded mb-0"></p>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                <span class="service-icon rounded-circle mx-auto mb-3">
-                    <i class="icon-like"></i>
-                </span>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0 mx-auto">
+            <img class="" src="./img/JavaScript-logo.png" alt="Profile Image" height="125"></img>
                 <h4>
-                    <strong>Favorited</strong>
+                    <strong>Javascript</strong>
                 </h4>
-                <p class="text-faded mb-0">Millions of users
-                    <i class="fas fa-heart"></i>
-                    Start Bootstrap!</p>
+                <p class="text-faded mb-0"></p>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <span class="service-icon rounded-circle mx-auto mb-3">
-                    <i class="icon-mustache"></i>
-                </span>
+
+            <div class="col-lg-3 col-md-6 mx-auto">
+            <img class="" src="./img/2000px-React-icon.svg.png" alt="Profile Image" height="125"></img>
                 <h4>
-                    <strong>Question</strong>
+                    <strong>React</strong>
                 </h4>
-                <p class="text-faded mb-0">I mustache you a question...</p>
+                <p class="text-faded mb-0"></p>
             </div>
+
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+            <img class="" src="./img/browserify.png" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>Browserify</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
         </div>
+
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 mx-auto">
+        <img class="" src="./img/grunt.svg" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>Grunt</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0 mx-auto">
+        <img class="" src="./img/bootstrap-stack.png" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>Bootstrap</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mx-auto">
+        <img class="" src="./img/sql-server-logo.png" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>SQL Server</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mx-auto">
+        <img class="" src="./img/csharp.png" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>C#</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mx-auto">
+        <img class="" src="./img/aspnetcore.png" alt="Profile Image" height="125"></img>
+            <h4>
+                <strong>ASP.NET Core</strong>
+            </h4>
+            <p class="text-faded mb-0"></p>
+        </div>
+
+        </div>
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Projects</a>
     </div>`
 }
-
+// HTML
+// CSS
+// JavaScript
+// React
+// Browserify
+// Grunt
+// Bootstrap SQL
+// C#
+// .NET Core
+// Photoshop
+// Illustrator
+// InDesign
+// 3DS Max
 module.exports = skills
 },{}]},{},[5]);
