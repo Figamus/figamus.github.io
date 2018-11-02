@@ -14,7 +14,7 @@ portfolio = () => {
                             <p class="mb-0">A price tracking website</p>
                         </span>
                     </span>
-                    <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                    <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">
                 </a>
             </div>
         </div>
