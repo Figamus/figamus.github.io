@@ -11,7 +11,7 @@ portfolio = () => {
                     <span class="caption">
                         <span class="caption-content">
                             <h2>Sale Sleuth</h2>
-                            <p class="mb-0">A price tracking website</p>
+                            <p class="mb-0">Single page application, built in React, designed to keep track of the pricing history of a product. Account based user price tracking, allowing users to select a product and follow the history of price changes affected that product.</p>
                         </span>
                     </span>
                     <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">
