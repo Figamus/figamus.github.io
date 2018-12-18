@@ -6,7 +6,7 @@ about = () => {
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h2>About Me</h2>
-                <p class="lead mb-5">Since 2005 I've been involved in the graphic design field. I've utilized the skills acquired during my education to produce a variety of products for both print and web. In 2010, I transitioned into an opportunity to be involved in the emerging 3D imaging and 3D printing industry, allowing me to learn new skills and having more input on company wide decisions. I continue to maintain a practice at Graphic Design, but decided to transition into a development environment, having discovered a passion for it. I pursued an education in an environment that fostered my passion.</p>
+                <p class="lead mb-5">Since 2005, I've been involved in the graphic design field. I've utilized the skills acquired during my education to produce a variety of products for both print and web. In 2010, I transitioned into an opportunity to be involved in the emerging 3D imaging and 3D printing industry, allowing me to learn new skills and having more input on company-wide decisions. I continued to maintain my graphic design skills but decided to make the transition into software development having discovered my passion for it. Having completed my time at Nashville Software School, I feel prepared and excited about this next stage in my career.</p>
                 <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Skills</a>
             </div>
         </div>
@@ -24,6 +24,7 @@ footer = () => {
                     <i class="icon-social-linkedin"></i>
                 </a>
             </li>
+            
             <li class="list-inline-item">
                 <a class="social-link rounded-circle text-white" target="_blank" href="https://github.com/Figamus">
                     <i class="icon-social-github"></i>
@@ -107,7 +108,7 @@ navbar = () => {
             <a class="js-scroll-trigger" href="#services">Skills</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="js-scroll-trigger" href="#portfolio">Projects</a>
         </li>
     </ul>`
 }
@@ -118,8 +119,7 @@ portfolio = () => {
     document.querySelector("#portfolio").innerHTML = `
     <div class="container">
         <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Portfolio</h3>
-            <h2 class="mb-5">Recent Projects</h2>
+            <h2 class="mb-5">Projects</h2>
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 mx-auto">
@@ -127,7 +127,7 @@ portfolio = () => {
                     <span class="caption">
                         <span class="caption-content">
                             <h2>Sale Sleuth</h2>
-                            <p class="mb-0">A price tracking website</p>
+                            <p class="mb-0">Single page application, built in React. Designed to keep track of pricing history on a product. User accounts can select a product and follow the history of price changes.</p>
                         </span>
                     </span>
                     <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">

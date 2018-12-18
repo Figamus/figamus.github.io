@@ -14,7 +14,7 @@ navbar = () => {
             <a class="js-scroll-trigger" href="#services">Skills</a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="js-scroll-trigger" href="#portfolio">Projects</a>
         </li>
     </ul>`
 }

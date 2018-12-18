@@ -2,8 +2,7 @@ portfolio = () => {
     document.querySelector("#portfolio").innerHTML = `
     <div class="container">
         <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Portfolio</h3>
-            <h2 class="mb-5">Recent Projects</h2>
+            <h2 class="mb-5">Projects</h2>
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 mx-auto">
@@ -11,7 +10,7 @@ portfolio = () => {
                     <span class="caption">
                         <span class="caption-content">
                             <h2>Sale Sleuth</h2>
-                            <p class="mb-0">Single page application, built in React. It's designed to keep track of pricing history on a product. User accounts can select a product and follow the history of price changes for that product.</p>
+                            <p class="mb-0">Single page application, built in React. Designed to keep track of pricing history on a product. User accounts can select a product and follow the history of price changes.</p>
                         </span>
                     </span>
                     <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">
