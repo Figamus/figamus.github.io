@@ -121,23 +121,53 @@ portfolio = () => {
         <div class="content-section-heading text-center">
             <h2 class="mb-5">Projects</h2>
         </div>
-        <div class="row no-gutters">
+        <div class="row">
             <div class="col-lg-6 mx-auto">
                 <a class="portfolio-item" target="_blank" href="https://github.com/Figamus/sale-sleuth">
-                    <span class="caption">
-                        <span class="caption-content">
-                            <h2>Sale Sleuth</h2>
-                            <p class="mb-0">Single page application, built in React. Designed to keep track of pricing history on a product. User accounts can select a product and follow the history of price changes.</p>
-                        </span>
-                    </span>
                     <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">
                 </a>
+                <div>
+                <span class="caption">
+                    <span class="caption-content">
+                        <h4>Sale Sleuth</h4>
+                        <p class="mb-0">Single page application, built in React. Designed to keep track of pricing history on a product. User accounts can select a product and follow the history of price changes.</p>
+                    </span>
+                </span>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <a class="portfolio-item" target="_blank" href="https://github.com/Figamus/sale-sleuth">
+                    <img class="img-fluid" src="img/Bhoba1.jpg" alt="">
+                </a>
+                <div>
+                <span class="caption">
+                    <span class="caption-content">
+                        <h4>BHOBA</h4>
+                        <p class="mb-0">BHOBA is a C# application using ASP.NET and Entity framework. It is a digital assistant for Recovery Agents to have quick accessible information while in the field to relevant information regarding any Fugitive in violation of the terms of their bail bond</p>
+                    </span>
+                </span>
+                </div>
             </div>
         </div>
     </div>`
 }
 
-{/* <div class="col-lg-6 mx-auto">
+{/*
+                <div class="row no-gutters">
+                <div class="col-lg-6 mx-auto">
+                    <a class="portfolio-item" target="_blank" href="https://github.com/Figamus/sale-sleuth">
+                        <span class="caption">
+                            <span class="caption-content">
+                                <h2>BHOBA</h2>
+                                <p class="mb-0">BHOBA is a C# application using ASP.NET and Entity framework. It is a digital assistant for Recovery Agents to have quick accessible information while in the field to relevant information regarding any Fugitive in violation of the terms of their bail bond</p>
+                            </span>
+                        </span>
+                        <img class="img-fluid" src="img/SaleSleuth1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+    <div class="col-lg-6 mx-auto">
                 <a class="portfolio-item" href="#">
                     <span class="caption">
                         <span class="caption-content">
